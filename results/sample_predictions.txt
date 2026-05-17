@@ -1,100 +1,301 @@
-TEXT: my refund is still pending and this experience is frustrating
-TRUE: 0
-PRED: 0
-
----
-TEXT: please provide the steps to activate profile update my ticket number
-TRUE: 1
-PRED: 1
-
----
-TEXT: the delivery was late and the package arrived damaged my ticket number please respond as soon as possible
-TRUE: 0
-PRED: 0
-
----
-TEXT: my refund is still pending and this experience is frustrating
-TRUE: 0
-PRED: 0
-
----
-TEXT: the delivery was late and the package arrived damaged
-TRUE: 0
-PRED: 0
-
----
-TEXT: the dashboard is working well and i am happy with the service
-TRUE: 2
-PRED: 2
-
----
-TEXT: billing is incorrect and i was charged twice this month
-TRUE: 0
-PRED: 0
-
----
-TEXT: the delivery was late and the package arrived damaged
-TRUE: 0
-PRED: 0
-
----
-TEXT: great service and clear communication from the support team my ticket number
-TRUE: 2
-PRED: 2
-
----
-TEXT: billing is incorrect and i was charged twice this month
-TRUE: 0
-PRED: 0
-
----
-TEXT: i am very unhappy because my service plan has not worked since this morning my ticket number
-TRUE: 0
-PRED: 0
-
----
-TEXT: the subscription keeps failing and support has not resolved my issue my ticket number
-TRUE: 0
-PRED: 0
-
----
-TEXT: i want to cancel because the service quality is poor and unreliable
-TRUE: 0
-PRED: 0
-
----
-TEXT: the app crashes whenever i try to use video call my ticket number please respond as soon as possible
-TRUE: 0
-PRED: 0
-
----
-TEXT: the app experience is smooth and reliable
-TRUE: 2
-PRED: 2
-
----
-TEXT: the response from the team was helpful and professional my ticket number
-TRUE: 2
-PRED: 2
-
----
-TEXT: my refund is still pending and this experience is frustrating
-TRUE: 0
-PRED: 0
-
----
-TEXT: i want to understand the warranty terms for this product my ticket number
-TRUE: 1
-PRED: 1
-
----
-TEXT: i want to understand the warranty terms for this product
-TRUE: 1
-PRED: 1
-
----
-TEXT: the app crashes whenever i try to use notifications please respond as soon as possible
-TRUE: 0
-PRED: 0
-
----
+true,predicted
+positive,positive
+positive,positive
+negative,negative
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+positive,positive
+neutral,neutral
+neutral,neutral
+positive,positive
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+negative,negative
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+positive,positive
+negative,negative
+neutral,neutral
+neutral,neutral
+neutral,neutral
+positive,positive
+positive,positive
+positive,positive
+positive,positive
+positive,positive
+negative,negative
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+neutral,neutral
+neutral,neutral
+neutral,neutral
+positive,positive
+positive,positive
+neutral,neutral
+negative,negative
+negative,negative
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+positive,positive
+positive,positive
+positive,positive
+negative,negative
+negative,negative
+negative,negative
+neutral,neutral
+neutral,neutral
+positive,positive
+neutral,neutral
+positive,positive
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+neutral,neutral
+neutral,neutral
+neutral,neutral
+neutral,neutral
+neutral,neutral
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+negative,negative
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+negative,negative
+negative,negative
+positive,positive
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+positive,positive
+positive,positive
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+negative,negative
+negative,negative
+neutral,neutral
+positive,positive
+positive,positive
+negative,negative
+neutral,neutral
+negative,negative
+neutral,neutral
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+positive,positive
+positive,positive
+negative,negative
+neutral,neutral
+positive,positive
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+neutral,neutral
+neutral,neutral
+positive,positive
+positive,positive
+positive,positive
+neutral,neutral
+positive,positive
+neutral,neutral
+neutral,neutral
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+neutral,neutral
+positive,positive
+positive,positive
+positive,positive
+neutral,neutral
+negative,negative
+negative,negative
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+positive,positive
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+negative,negative
+negative,negative
+positive,positive
+positive,positive
+neutral,neutral
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+neutral,neutral
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+neutral,neutral
+negative,negative
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+positive,positive
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+negative,negative
+neutral,neutral
+negative,negative
+positive,positive
+positive,positive
+negative,negative
+positive,positive
+neutral,neutral
+positive,positive
+neutral,neutral
+neutral,neutral
+neutral,neutral
+positive,positive
+positive,positive
+positive,positive
+neutral,neutral
+neutral,neutral
+positive,positive
+neutral,neutral
+neutral,neutral
+positive,positive
+neutral,neutral
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+negative,negative
+neutral,neutral
+neutral,neutral
+positive,positive
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+neutral,neutral
+neutral,neutral
+negative,negative
+positive,positive
+negative,negative
+neutral,neutral
