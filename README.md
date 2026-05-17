@@ -1,110 +1,136 @@
-# Part 3 – NLP and Sequence Modeling Mini Project
-
-This project builds a complete NLP pipeline using a customer support dataset.  
-The goal is to compare traditional text‑vectorization models with sequence‑based deep learning models such as LSTMs.
 
 ---
 
-## 📁 Dataset
+## 📝 Dataset
 
-File: `customer_support_text_classification.csv`
+The dataset contains customer support messages with the following fields:
 
-Columns include:
 - `ticket_id`
 - `channel`
 - `customer_message`
-- `sentiment_label` (negative, neutral, positive)
+- `sentiment_label`
 - `word_count`
 - `urgent_flag`
 
----
+Example entries include messages such as:
 
-## 📌 Task Overview
-
-### **Task 1 — Dataset Understanding**
-- Loaded dataset using pandas  
-- Displayed:
-  - Number of records  
-  - Unique sentiment labels  
-  - Sample messages  
-  - Average text length  
-  - Class distribution (bar plot)
+- “The refund process was fast and convenient.”  
+- “My refund is still pending and this experience is frustrating.”  
+- “I need help finding the invoice for my last order.”
 
 ---
 
-### **Task 2 — Text Preprocessing**
-Performed text cleaning:
+## ✅ Task 1 — Dataset Understanding
+
+The notebook includes:
+
+- Number of records  
+- Unique sentiment classes  
+- Sample messages  
+- Average text length  
+- Class distribution visualization  
+
+---
+
+## 🧹 Task 2 — Text Preprocessing
+
+Preprocessing steps:
+
 - Lowercasing  
-- Removing digits, punctuation, and ticket numbers  
+- Removing special characters  
 - Tokenization  
-- Optional stopword removal  
-- Tokenizer + padded sequences for LSTM models  
-- Created `clean_text` column  
+- Stopword removal  
+- Padding sequences (for LSTM model)
 
 ---
 
-### **Task 3 — Text Vectorization**
-Two approaches were used:
-1. **TF‑IDF (unigrams + bigrams)** for baseline ML  
-2. **Tokenizer integer sequences** for LSTM  
+## 🔡 Task 3 — Text Vectorization
 
-Vectorization is required because machine learning models operate on numerical tensors, not raw text.
+Two approaches are implemented:
+
+### **1. TF‑IDF Vectorization**
+Used for the baseline machine learning model.
+
+### **2. Tokenizer + Sequences**
+Used for the LSTM deep learning model.
+
+**Why vectorization?**  
+Machine learning models cannot understand raw text.  
+Vectorization converts text into numerical form so models can learn patterns.
 
 ---
 
-### **Task 4 — Baseline Model**
-Model: **Logistic Regression + TF‑IDF**
+## 📊 Task 4 — Baseline Model
 
-Evaluation:
+A simple baseline classifier is built using:
+
+- **TF‑IDF vectorizer**
+- **Logistic Regression**
+
+Evaluation includes:
+
 - Accuracy  
-- Precision, Recall, F1‑score  
-- Confusion matrix (saved as `results/model_evaluation.png`)
+- Precision, Recall, F1-score  
+- Confusion matrix  
+
+This serves as a benchmark before using sequence models.
 
 ---
 
-### **Task 5 — Sequence Model (LSTM)**
-Built a simple LSTM architecture:
+## 🔁 Task 5 — Sequence Model (LSTM)
 
-- Embedding layer (100 dimensions)  
-- LSTM (64 units)  
-- Dense layer (ReLU)  
-- Output softmax layer (3 classes)  
+A deep learning model is implemented using:
 
-Trained for a few epochs and evaluated on the test set.  
-Saved accuracy plot as `results/lstm_accuracy.png`.
+- Embedding layer  
+- LSTM layer  
+- Dense output layer  
 
----
+Training includes:
 
-### **Task 6 — Attention & Transformer Reflection**
-Included a conceptual explanation of:
-- RNN limitations  
-- How LSTMs improve long‑term memory  
-- Why attention mechanisms matter  
-- Why transformers dominate modern NLP  
+- Sparse categorical crossentropy loss  
+- Adam optimizer  
+- Accuracy metric  
+
+The notebook compares LSTM performance with the baseline model.
 
 ---
 
-## 📂 Repository Structure
+## 🧠 Task 6 — Attention & Transformer Reflection
 
-part-3-nlp-sequence-modeling/
-│
-├── README.md
-├── notebook.ipynb
-├── requirements.txt
-└── results/
-  ├── model_evaluation.png
-  └── sample_predictions.txt
+The notebook includes explanations of:
+
+- Why RNNs struggle with long-term dependencies  
+- How LSTMs improve memory handling  
+- What attention mechanisms solve  
+- Why transformers dominate modern NLP and Generative AI  
 
 ---
 
-## 🚀 Summary
+## 📦 Results
 
-This project demonstrates the full NLP workflow:
-- Data exploration  
-- Preprocessing  
-- Vectorization  
-- Baseline ML  
-- Deep learning sequence modeling  
-- Reflection on modern NLP architectures  
+The `results/` folder contains:
 
-It provides a strong foundation for understanding how text is transformed into numerical form and how different models process language.
+- Model evaluation outputs  
+- Sample predictions from the baseline model  
+
+---
+
+## 🚀 How to Run
+
+1. Install dependencies:pip install -r requirements.txt
+2. Open the notebook:jupyter notebook notebook.ipynb
+3. Run all cells in order.
+
+---
+
+## ✨ Summary
+
+This project demonstrates:
+
+- End‑to‑end NLP workflow  
+- Traditional vs. deep learning text modeling  
+- Practical understanding of embeddings, LSTMs, and attention  
+
+It forms a strong foundation for more advanced NLP tasks such as transformers and large language models.
+
+

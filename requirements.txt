@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+nltk
+tensorflow (CPU-only)
+tensorflow==2.15.0 (Windows compatibility)
